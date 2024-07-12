@@ -1,6 +1,6 @@
 name: searchbar_animated_suggestions
 description: A Flutter package that provides a search bar with animated suggestions.
-version: 0.0.1
+version: 0.0.2
 license: MIT
 homepage: https://github.com/ChandanKumar-Singh/searchbar_auto_animated_suggestion/blob/main/lib/saas/saas.dart
 
