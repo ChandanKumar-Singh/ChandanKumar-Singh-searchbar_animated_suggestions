@@ -1,7 +1,10 @@
 ## Change Log
-## version 0.0.6
+
+### version 0.0.6
+
 - **Changelog formated**
   - Formated in right way
+  
 ### Version 0.0.5
 
 - **Enhancements**
