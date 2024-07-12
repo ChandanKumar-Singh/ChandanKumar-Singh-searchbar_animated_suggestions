@@ -19,7 +19,11 @@ class SaasField extends StatefulWidget {
     TextEditingController? controller,
     this.textInputAction = TextInputAction.search,
     this.showDivider = false,
+    this.elevation = 0.1,
   })  : assert(items.isNotEmpty, "items can't be empty"),
+        assert(elevation >= 0, "elevation can't be negative"),
+        assert(height > 0, "height can't be negative"),
+        assert(elevation <= 1, "elevation can't be greater than 1"),
         controller = controller ?? TextEditingController();
 
   final double height;
@@ -37,6 +41,7 @@ class SaasField extends StatefulWidget {
   final TextInputAction textInputAction;
 
   final bool showDivider;
+  final double elevation;
 
   @override
   State<SaasField> createState() => _SaasFieldState();
@@ -107,7 +112,7 @@ class _SaasFieldState extends State<SaasField> with TickerProviderStateMixin {
       if (boxShadow.isEmpty) {
         boxShadow = [
           BoxShadow(
-            color: Colors.grey.withOpacity(0.05),
+            color: Colors.grey.withOpacity(widget.elevation),
             spreadRadius: 2,
             blurRadius: 10,
             offset: const Offset(0, 3),

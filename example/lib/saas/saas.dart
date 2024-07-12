@@ -36,6 +36,7 @@ class _SaasTestState extends State<SaasTest> {
             child: SaasField(
               height: 50,
               items: items,
+              elevation: 0.5,
               showDivider: true,
               onSubmitted: (value) => toast(value),
               padding: const EdgeInsetsDirectional.symmetric(vertical: 8),
